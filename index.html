@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML BASIC CARD</title>
+    <style>
+      .card {
+        margin: 2rem auto;
+        background-color: rgb(255, 234, 182);
+        padding: 1rem;
+        width: 260px;
+        border-radius: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2rem;
+      }
+      .price {
+        display: flex;
+        align-items: center;
+      }
+
+      .amount {
+        font-size: 1.5rem;
+        padding-right: 1rem;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      li::before {
+        content: "\2713\0020";
+        font-weight: bolder;
+        margin-left: -2.2rem;
+        padding-right: 1rem;
+      }
+
+      span {
+        border-bottom: 3px dotted black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h4>Plus</h4>
+        <p>
+          For teams looking to create connected apps to manage their own
+          workflows
+        </p>
+        <br /><br /><br />
+        <div class="price">
+          <div class="amount">
+            <h1><strong>$10</strong></h1>
+          </div>
+          <div class="price">
+            <p>
+              per seat / month <br />
+              billed annually
+            </p>
+          </div>
+        </div>
+        <p><strong>$12</strong> billed monthly</p>
+        <div class="btn">
+          <button>Try for free</button>
+        </div>
+
+        <p>Everything in <strong>Free</strong> plus:</p>
+        <ul>
+          <li>3 <span>extensions</span> per base</li>
+          <li>3 sync integrations</li>
+          <li>5,000 records per base</li>
+          <li>5GB of attachments per base</li>
+          <li>Custom branded forms</li>
+          <li>6-month revision & snapshot history</li>
+          <li>Automatic table syncing</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
